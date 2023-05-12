@@ -7,7 +7,6 @@ the cloud, transmitting  through a Dns-over-TLS encrypted tunnel to Google Publi
 
 Flows extracted using Tranalyzer2 and CICFlowmeter feature extraction tools from multiple network captures defined by scenarios being investigated.
 
-==================
 Dataset comprises:
 ==================
 Original PCAP files with TCP port 853 TLS traffic
