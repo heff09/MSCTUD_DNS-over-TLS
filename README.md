@@ -1,5 +1,5 @@
 # MSCTUD_DNS-over-TLS_Dataset
-![My Image](MSCTUD_DNS-over-TLS/Network Topology.png)
+![Alt text](MSCTUD_DNS-over-TLS/Network Topology.png)
 
 Dataset part of Research project to Detect tunnelling over DoT-encrypted links using Machine learning Algorthms.
 
