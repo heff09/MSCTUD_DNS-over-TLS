@@ -1,0 +1,120 @@
+#
+# Tranalyzer 0.8.14 (Anteater), Tarantula.
+# Core configuration: L2, IPv4, IPv6
+# SensorID: 666
+# PID: 8756
+# Command line: /home/toor/Desktop/Tranalyzer/tranalyzer2-0.8.14/tranalyzer2/build/tranalyzer -r BEN_DoT.pcap -w results/
+# HW info: ubuntu;Linux;5.15.0-71-generic;#78~20.04.1-Ubuntu SMP Wed Apr 19 11:26:48 UTC 2023;x86_64
+#
+# Plugins loaded:
+#   01: basicFlow, version 0.8.14
+#   02: basicStats, version 0.8.14
+#   03: tcpFlags, version 0.8.14
+#   04: connStat, version 0.8.14
+#   05: nFrstPkts, version 0.8.14
+#   06: pktSIATHisto, version 0.8.14
+#   07: entropy, version 0.8.14
+#   08: txtSink, version 0.8.14
+#
+# Col No.	Type	Name	Description
+1	C	dir	Flow direction
+2	U64	flowInd	Flow index
+3	H64	flowStat	Flow status and warnings
+4	U64.U32	timeFirst	Date time of first packet
+5	U64.U32	timeLast	Date time of last packet
+6	U64.U32	duration	Flow duration
+7	U8	numHdrDesc	Number of different headers descriptions
+8	U16:R	numHdrs	Number of headers (depth) in hdrDesc
+9	SC:R	hdrDesc	Headers description
+10	MAC:R	srcMac	Mac source
+11	MAC:R	dstMac	Mac destination
+12	H16	ethType	Ethernet type
+13	U16:R	ethVlanID	VLAN IDs
+14	IPX	srcIP	Source IP address
+15	SC	srcIPCC	Source IP country
+16	S	srcIPOrg	Source IP organisation
+17	U16	srcPort	Source port
+18	IPX	dstIP	Destination IP address
+19	SC	dstIPCC	Destination IP country
+20	S	dstIPOrg	Destination IP organisation
+21	U16	dstPort	Destination port
+22	U8	l4Proto	Layer 4 protocol
+23	U64	numPktsSnt	Number of transmitted packets
+24	U64	numPktsRcvd	Number of received packets
+25	U64	numBytesSnt	Number of transmitted bytes
+26	U64	numBytesRcvd	Number of received bytes
+27	U16	minPktSz	Minimum layer 3 packet size
+28	U16	maxPktSz	Maximum layer 3 packet size
+29	F	avePktSize	Average layer 3 packet size
+30	F	stdPktSize	Standard deviation layer 3 packet size
+31	F	minIAT	Minimum IAT
+32	F	maxIAT	Maximum IAT
+33	F	aveIAT	Average IAT
+34	F	stdIAT	Standard deviation IAT
+35	F	pktps	Sent packets per second
+36	F	bytps	Sent bytes per second
+37	F	pktAsm	Packet stream asymmetry
+38	F	bytAsm	Byte stream asymmetry
+39	H16	tcpFStat	tcpFlags status
+40	U16	ipMindIPID	IP minimum delta IP ID
+41	U16	ipMaxdIPID	IP maximum delta IP ID
+42	U8	ipMinTTL	IP minimum TTL
+43	U8	ipMaxTTL	IP maximum TTL
+44	U8	ipTTLChg	IP TTL change count
+45	H8	ipToS	IP Type of Service hex
+46	H16	ipFlags	IP aggregated flags
+47	U16	ipOptCnt	IP options count
+48	H8_H32	ipOptCpCl_Num	IP aggregated options, copy-class and number
+49	U16_U16	ip6OptCntHH_D	IPv6 Hop-by-Hop destination option counts
+50	H32_H32	ip6OptHH_D	IPv6 aggregated Hop-by-Hop destination options
+51	U32	tcpISeqN	TCP initial sequence number
+52	U16	tcpPSeqCnt	TCP packet seq count
+53	U64	tcpSeqSntBytes	TCP sent seq diff bytes
+54	U16	tcpSeqFaultCnt	TCP sequence number fault count
+55	U16	tcpPAckCnt	TCP packet ACK count
+56	U64	tcpFlwLssAckRcvdBytes	TCP flawless ACK received bytes
+57	U16	tcpAckFaultCnt	TCP ACK number fault count
+58	U32	tcpBFlgtMx	TCP Bytes in Flight MAX
+59	U32	tcpInitWinSz	TCP initial effective window size
+60	F	tcpAveWinSz	TCP average effective window size
+61	U32	tcpMinWinSz	TCP minimum effective window size
+62	U32	tcpMaxWinSz	TCP maximum effective window size
+63	U16	tcpWinSzDwnCnt	TCP effective window size change down count
+64	U16	tcpWinSzUpCnt	TCP effective window size change up count
+65	U16	tcpWinSzChgDirCnt	TCP effective window size direction change count
+66	F	tcpWinSzThRt	TCP packet count ratio below window size WINMIN threshold
+67	H16	tcpFlags	TCP aggregated protocol flags (FINACK, SYNACK, RSTACK, CWR, ECE, URG, ACK, PSH, RST, SYN, FIN)
+68	H16	tcpAnomaly	TCP aggregated header anomaly flags
+69	U16	tcpOptPktCnt	TCP options packet count
+70	U16	tcpOptCnt	TCP options count
+71	H32	tcpOptions	TCP aggregated options
+72	U16	tcpMSS	TCP maximum segment size
+73	U16	tcpWS	TCP window scale
+74	H16	tcpMPTBF	TCP MPTCP type bitfield
+75	H8	tcpMPF	TCP MPTCP flags
+76	U8	tcpMPAID	TCP MPTCP address ID
+77	H8	tcpMPDSSF	TCP MPTCP DSS flags
+78	U32	tcpTmS	TCP time stamp
+79	U32	tcpTmER	TCP time echo reply
+80	F	tcpEcI	TCP estimated counter increment
+81	D	tcpUtm	TCP estimated up time
+82	U64.U32	tcpBtm	TCP estimated boot time
+83	F	tcpSSASAATrip	TCP trip time (A: SYN, SYN-ACK, B: SYN-ACK, ACK)
+84	F	tcpRTTAckTripMin	TCP ACK trip min
+85	F	tcpRTTAckTripMax	TCP ACK trip max
+86	F	tcpRTTAckTripAve	TCP ACK trip average
+87	F	tcpRTTAckTripJitAve	TCP ACK trip jitter average
+88	F	tcpRTTSseqAA	TCP round trip time (A: SYN, SYN-ACK, ACK, B: ACK-ACK)
+89	F	tcpRTTAckJitAve	TCP ACK round trip average jitter
+90	U32	connSip	Number of unique source IPs
+91	U32	connDip	Number of unique destination IPs
+92	U32	connSipDip	Number of connections between source and destination IP
+93	U32	connSipDprt	Number of connections between source IP and destination port
+94	F	connF	The f number: connSipDprt / connSip [EXPERIMENTAL]
+95	U32	nFpCnt	Number of signal samples
+96	U32_U64.U32:R	L2L3L4Pl_Iat	L2/L3/L4/Payload (s. PACKETLENGTH in packetCapture.h) length and IAT for the N first packets
+97	U32	tCnt	Number of tree entries
+98	U16_U32_U32_U32_U32:R	Ps_Iat_Cnt_PsCnt_IatCnt	Packet size (PS) and min inter-arrival time (IAT) of bin histogram
+99	F	PyldEntropy	Payload entropy
+100	F	PyldChRatio	Payload character ratio
+101	F	PyldBinRatio	Payload binary ratio
