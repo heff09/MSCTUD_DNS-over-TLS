@@ -1,5 +1,6 @@
 # MSCTUD_DNS-over-TLS_Dataset
-![My Image](Network Topology.png)
+![My Image](MSCTUD_DNS-over-TLS/Network Topology.png)
+
 Dataset part of Research project to Detect tunnelling over DoT-encrypted links using Machine learning Algorthms.
 
 Iodine, DNSteal and PowerDNS DNS tunnelling tools used to establish connections to a malicious server hosted in 
