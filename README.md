@@ -11,9 +11,8 @@ Flows extracted using Tranalyzer2 and CICFlowmeter feature extraction tools from
 
 Dataset comprises:
 ==================
+Tranalyzer2 extracted Flow and statistical information, 101 raw features saved to each csv file.
+
+CICFlowmeter extracted Flows and statistical information, 84 raw features saved to each csv file.
+
 Original PCAP files with TCP port 853 TLS traffic
-
-Tranalyzer2 extracted Flow and statistical information, 101 features saved to each csv file.
-
-CICFlowmeter extracted Flows and statistical information, 84 features saved to each csv file.
-
