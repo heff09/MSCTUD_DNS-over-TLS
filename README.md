@@ -1,6 +1,6 @@
 # MSCTUD_DNS-over-TLS_Dataset
 
-Dataset part of Research project to detect DNS tunnelling over a DoT encrypted link using Machine Learning Algorthms.
+Dataset part of research project to detect DNS tunnelling over a DoT encrypted link using Machine Learning Algorthms.
 
 ![Network Topology](https://github.com/heff09/MSCTUD_DNS-over-TLS/assets/41806354/878bb0fc-f3d6-4b4a-bd3f-6dc2aef7052e)
 
@@ -11,8 +11,8 @@ Flows extracted using Tranalyzer2 and CICFlowmeter feature extraction tools from
 
 Dataset comprises:
 ==================
-Tranalyzer2 extracted Flow and statistical information, 101 raw features saved to each csv file.
+Tranalyzer2 extracted flows and statistical information, 101 raw features saved to each csv file.
 
-CICFlowmeter extracted Flows and statistical information, 84 raw features saved to each csv file.
+CICFlowmeter extracted flows and statistical information, 84 raw features saved to each csv file.
 
 Original PCAP files with TCP port 853 TLS traffic
