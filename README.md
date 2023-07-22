@@ -1,4 +1,4 @@
-# MSCTUD_DNS-over-TLS_Dataset
+# MSCTUD DNS-over-TLS Dataset
 
 Dataset part of research project to detect DNS tunnelling over a DoT encrypted link using Machine Learning.
 
